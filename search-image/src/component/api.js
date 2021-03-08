@@ -12,7 +12,7 @@ const LoadImages=()=>{
         console.log("LoadImages");
     })
     .catch((error)=>{
-       return "Invalid request para"+error;  
+       return "Invalid request LoadImages"+error;  
     })
   },[count]);
   
@@ -27,7 +27,7 @@ const SearchImages=(query)=>{
         console.log(data);
     })
     .catch((error)=>{
-       return "Invalid request para"+error;  
+       return "Invalid request SearchImages"+error;  
     })
   },[query]);
   
