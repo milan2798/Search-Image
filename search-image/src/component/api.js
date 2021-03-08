@@ -9,7 +9,7 @@ const LoadImages=()=>{
     axios.get("https://api.unsplash.com/photos?client_id=RBIT2koapxwBkrfNRx6Og8NL7NbnYav8xuxYJb05SSw")
     .then((data)=>{
         setstate(data.data);
-        console.log("LoadImages");
+        console.log("LoadImages call");
     })
     .catch((error)=>{
        return "Invalid request LoadImages"+error;  
@@ -24,7 +24,7 @@ const SearchImages=(query)=>{
     axios.get("https://api.unsplash.com/search/photos?query="+query+"&client_id=RBIT2koapxwBkrfNRx6Og8NL7NbnYav8xuxYJb05SSw")
     .then((data)=>{
         setstate(data.data.results);
-        console.log(data);
+        console.log("Search Images call");
     })
     .catch((error)=>{
        return "Invalid request SearchImages"+error;  
