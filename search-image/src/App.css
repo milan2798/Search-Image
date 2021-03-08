@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+.container{
+  columns: 3;
+  column-gap: 10px;
+  width: 80%;
+  margin: 2px auto;
+}
+.container img{
+  width: 100%;
+  margin: 0;
+ padding: 5px;
+ transition: transform .2s; 
+}
+img:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.search input{
+  width: 30em;
+  height: 3em;
+  margin-top: 10em;
+  margin-bottom: 4em;
+  margin-right: 2.5em;
+  border: 1pt black solid;
+
+}
+.search button{
+  width: 5em;
+  height: 3em;
+  margin-top: 10em;
+  margin-bottom: 4em;
+  font-weight: bold;
+  border: 1pt black solid;
+  color: azure;
+  background-color: rgb(14, 14, 31);
+
+}
+
+
