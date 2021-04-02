@@ -6,7 +6,7 @@ const count1=2;
 const LoadImages=()=>{
   const [state, setstate] = useState([]);
   useEffect(() => {
-    axios.get("https://api.unsplash.com/photos?client_id=RBIT2koapxwBkrfNRx6Og8NL7NbnYav8xuxYJb05SSw")
+    axios.get("https://api.unsplash.com/photos?client_id=YOUR_CLIENT_ID")
     .then((data)=>{
         setstate(data.data);
         console.log("LoadImages call");
@@ -21,7 +21,7 @@ const LoadImages=()=>{
 const SearchImages=(query)=>{
   const [state, setstate] = useState([]);
   useEffect(() => {
-    axios.get("https://api.unsplash.com/search/photos?query="+query+"&client_id=RBIT2koapxwBkrfNRx6Og8NL7NbnYav8xuxYJb05SSw")
+    axios.get("https://api.unsplash.com/search/photos?query="+query+"&client_id=YOUR_CLIENT_ID")
     .then((data)=>{
         setstate(data.data.results);
         console.log("Search Images call");
